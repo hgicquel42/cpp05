@@ -6,11 +6,15 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:35:05 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/01/31 19:38:08 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/01/31 19:38:04 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+class Bureaucrat;
+
+#include "Form.hpp"
 #include <string>
 #include <iostream>
 
@@ -28,6 +32,7 @@ class Bureaucrat
 		int					getGrade() const;
 		void				upgrade(void);
 		void				downgrade(void);
+		void				signForm(Form& form);
 		
 		class GradeTooLowException: public std::exception
 		{

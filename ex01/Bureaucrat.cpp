@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:58:26 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/01/31 19:27:13 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/01/31 19:38:50 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,25 @@ void	Bureaucrat::downgrade(void)
 	if (this->grade == 150)
 		throw GradeTooLowException();
 	this->grade++;
+}
+
+void	Bureaucrat::signForm(Form& form)
+{
+	try
+	{
+		form.beSigned(*this);
+		std::cout << this->name << " ";
+		std::cout << "signed" << " ";
+		std::cout << form.getName() << "\n";
+	}
+	catch (std::exception& e)
+	{
+		std::cout << this->name << " ";
+		std::cout << "couldn't sign" << " ";
+		std::cout << form.getName() << " ";
+		std::cout << "because" << " ";
+		std::cout << "\"" << e.what() << "\"\n";
+	}
 }
 
 Bureaucrat::GradeTooLowException::GradeTooLowException(void) throw():
