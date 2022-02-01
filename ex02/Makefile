@@ -6,6 +6,7 @@ INPUT = \
 	Form.cpp \
 	RobotomyRequestForm.cpp \
 	PresidentialPardonForm.cpp \
+	ShrubberyCreationForm.cpp \
 
 OUTPUT = ${INPUT:.cpp=.o}
 

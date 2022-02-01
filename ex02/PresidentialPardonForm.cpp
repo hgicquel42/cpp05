@@ -6,12 +6,12 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 11:18:44 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/02/01 11:46:33 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/02/01 12:30:59 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
-#include <cstdlib>
+#include <iostream>
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string& target):
 	Form("PresidentialPardonForm", 25, 5),
