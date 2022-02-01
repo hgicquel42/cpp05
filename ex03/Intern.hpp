@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
+/*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/01 11:17:21 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/02/01 12:58:54 by hgicquel         ###   ########.fr       */
+/*   Created: 2022/02/01 12:50:38 by hgicquel          #+#    #+#             */
+/*   Updated: 2022/02/01 13:00:27 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include "Form.hpp"
+#include <string>
 
-class RobotomyRequestForm: public Form
+class Intern
 {
-	private:
-		std::string target;
 	public:
-		RobotomyRequestForm(const std::string& target);
-		~RobotomyRequestForm(void);
-		RobotomyRequestForm(const RobotomyRequestForm& from);
-		RobotomyRequestForm&	operator=(const RobotomyRequestForm& from);
-		void					execute(const Bureaucrat& b) const;
+		Intern(void);
+		~Intern(void);
+		Intern(const Intern& from);
+		Intern&	operator=(const Intern& from);
+		Form*	makeForm(const std::string& name, const std::string& target) const;
 };

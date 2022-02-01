@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:35:05 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/01/31 19:38:04 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/02/01 12:57:33 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Bureaucrat
 		int					getGrade() const;
 		void				upgrade(void);
 		void				downgrade(void);
-		void				signForm(Form& form);
+		void				signForm(Form& form) const;
 		
 		class GradeTooLowException: public std::exception
 		{

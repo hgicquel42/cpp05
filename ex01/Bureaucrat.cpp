@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:58:26 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/01/31 19:38:50 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/02/01 12:57:40 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void	Bureaucrat::downgrade(void)
 	this->grade++;
 }
 
-void	Bureaucrat::signForm(Form& form)
+void	Bureaucrat::signForm(Form& form) const
 {
 	try
 	{
