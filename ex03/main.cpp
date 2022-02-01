@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 18:38:27 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/02/01 13:21:12 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/02/01 13:35:42 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	main(void)
 	std::cout << "--- Form B27 ---" << "\n\n";
 
 	Form* b27 = intern.makeForm("shrubbery creation", "lol");
+	std::cout << "\n";
 
 	if (b27)
 	{
@@ -53,6 +54,7 @@ int	main(void)
 	std::cout << "--- Form B28 ---" << "\n\n";
 
 	Form* b28 = intern.makeForm("robotomy request", "Bryce");
+	std::cout << "\n";
 
 	if (b28)
 	{
@@ -77,6 +79,7 @@ int	main(void)
 	std::cout << "--- Form B29 ---" << "\n\n";
 
 	Form* b29 = intern.makeForm("presidential pardon", "Abdou");
+	std::cout << "\n";
 
 	if (b29)
 	{
@@ -101,6 +104,7 @@ int	main(void)
 	std::cout << "--- Form B30 ---" << "\n\n";
 
 	Form* b30 = intern.makeForm("lol", "lol");
+	std::cout << "\n";
 
 	if (b30)
 	{

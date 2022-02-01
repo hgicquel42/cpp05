@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:58:26 by hgicquel          #+#    #+#             */
-/*   Updated: 2022/02/01 13:00:07 by hgicquel         ###   ########.fr       */
+/*   Updated: 2022/02/01 13:28:37 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	Bureaucrat::signForm(Form& form) const
 	}
 }
 
-void	Bureaucrat::executeForm(Form& form) const
+void	Bureaucrat::executeForm(const Form& form) const
 {
 	try
 	{
